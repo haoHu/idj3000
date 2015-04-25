@@ -1,0 +1,97 @@
+       <html>
+<head>
+	<title>Insta-DJ-3000</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>INSTA-DJ-3000</h1>
+		</header>
+
+			<aside>
+				<div class="menuDiv">
+				<form class="menuForm">
+					<fieldset>
+						<label><h3>Style</h3>
+							<select name="style">
+								<option selected>Select One</option>
+								<option value="australian hip hop">Australian Hip Hop</option>
+								<option value="chicago house">Chicago House</option>
+								<option value="classic schlager">Classic Schlager</option>
+								<option value="detroit techno">Detroit Techno</option>
+								<option value="drill and bass">Drill & Bass</option>
+								<option value="dub">Dub</option>
+								<option value="hip hop">Hip Hop</option>
+								<option value="gothic symphonic metal">Gothic Symphonic Metal</option>
+								<option value="jazz">Jazz</option>
+								<option value="old school hip hop">Old School Hip Hop</option>
+								<option value="techno">Techno</option>
+								<option value="metal">Metal</option>
+							</select>
+						</label>
+						<label><h3>Mood</h3>
+							<select name="mood">
+								<option selected>Select One</option>
+								<option value="happy">Happy</option>
+								<option value="sad">Sad</option>
+								<option value="angry">Angry</option>
+								<option value="epic">Epic</option>
+								<option value="manic">Manic</option>
+							</select>
+						</label>
+						<label><h3>Danceability</h3>
+							<select name="danceability">
+								<option selected>Select One</option>
+								<option value="1.0">High</option>
+								<option value="0.5">Medium</option>
+								<option value="0.0">Low</option>
+							</select>
+						</label>
+						<label><h3>Energy</h3>
+							<select name="energy" onchange="gatherSelections()">
+								<option selected>Select One</option>
+								<option value="1.0">High</option>
+								<option value="0.5">Medium</option>
+								<option value="0.0">Low</option>
+							</select>
+						</label>
+					</fieldset>
+				</form>
+				<div class="handle">Selectah!</div>
+				</div>
+			</aside>
+
+		<main>
+			<section class="bpmDisplay">
+				<form class="mainForm">
+					<input type="text" class="bpm" value="TAP" />
+				</form>
+			</section>
+
+			<section class="results">
+				<div class="djBag">
+					<h2>Playlist Recommendations.</h2>
+					<p>This selection of tracks are within +/- 5% BPM.</p>
+					<ul class="tracks">
+
+					</ul>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<h4>Hacked together by Patrick Wacher at <a href="https://generalassemb.ly/">General Assembly</a>. Utilizing the <a href="http://developer.echonest.com/">EchoNest API.</a></h4>
+		</footer>
+
+	</div>
+
+
+
+<script type="text/javascript" src="magic.js"></script>
+
+
+</body>
+</html>
